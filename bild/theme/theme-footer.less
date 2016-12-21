@@ -1,0 +1,26 @@
+.footer-down {
+  text-align: center;
+  color: @white;
+  background: url("@{image-path-theme}/backgrounds/food-001.jpg") bottom center transparent;
+  background-size: cover;
+  padding: 110px 0 30px 0;
+  margin-top: -80px;
+  font-size: 11px;
+  text-transform: uppercase;
+  .footer-list {
+    li{
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 1px solid @white;
+      &:first-child{
+        border-left: none;
+      }
+    }
+    a {
+      color: @white;
+      &:hover {
+        color: @white;
+      }
+    }
+  }
+}
