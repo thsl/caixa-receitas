@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="description" content="CAIXA: 156 anos">
+        <meta name="keywords" content="CAIXA, aniversário">
+        <meta name="application-name" content="CAIXA: 156 ano">
+        <meta name="author" content="CAIXA">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <title>CAIXA: 156 anos</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/ionicons.min.css" rel="stylesheet">
+        <link href="css/theme.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/ingredientes.css" rel="stylesheet"/>
+
+        <link rel="stylesheet" type="text/css" href="js/plyr/plyr.css" rel="stylesheet"/>
+
+
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie8.css"/><![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 9]>Seu navegador é muito antigo, por favor atualize-o.<![endif]-->
+
+        <header class="header-global">
+            <div class="container">
+                <nav class="navigation">
+                    <div class="content-logo">
+                        <h1 class="logo"></h1>
+                    </div>
+                    <div class="nav-bar-caixa">
+                        <span class="arrow" style="left:40%"></span>
+                        <img src="img/logos/caixa-logo-x-w.png" class="img-adaptative">
+                    </div>
+                </nav>
+            </div>
+            <section class="header-intro" style="margin-top: -60px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <section class="intro-text">
+                                <h1><strong>Uma receita<br> de
+                                </strong><span class="underlined-mark mark-verde">sucesso.</span></h1>
+                                <p class="mt-md text-dark-blue">Fazer juntos é mais do que estar no mesmo lugar.<br> É ter a mesma essência. É misturar dosesde dedicação a porções de comprometimento,com uma pitada de paixão.
+                                    <br>É usar o leve amargor das dificuldades para acentuar as doces conquistas. <br>
+                                    <strong>Parabéns, você é um ingrediente <br>especial dessa receita.</strong>
+
+                                </p>
+                            </section>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="foto-chef">
+                                <img src="img/fotos/foto-do-chef.png" class="foto-chef-img img-adaptative">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <section class="section-escolha with-video" style="background-image: url('img/backgrounds/food-002.png');">
+            <div class="diagonals-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <h2 class="text-white mt-lg"><strong>O resultado da sua<br> contribuição acaba <br>de
+                                <span class="underlined-mark mark-orange mt-sm">sair do forno.</span></strong>
+                            </h2>
+                        </div>
+                        <div class="col-sm-6 text-center text-white">
+                            <div class="convide">
+                                <p>Convide um colega e coloque a mão namassa para comemorar mais um ano de sucesso construído, assim como essa receita, juntos. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="video-player">
+            <div class="content-video">
+                <video controls>
+                    <source src="video/bolo.mp4"/>
+                    <!--<source src="../static/video/10s.webm" type='video/webm; codecs="vp8, vorbis"'/>
+                    <source src="../static/video/10s.ogv" type='video/ogg; codecs="theora, vorbis"'/>-->
+                </video>
+            </div>
+        </div>
+        <footer class="footer-down for-video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/logos/logo-caixa_3d_negativo.png">
+                        <ul class="list-unstyled list-inline footer-list mt-xl">
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li>Todos os direitos reservados 2016</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.lettering.js"></script>
+        <script src="js/theme.js"></script>
+
+        <script src="js/plyr/plyr.js"></script>
+        <script>
+            plyr.setup();
+            (function () {
+                // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+                // e.g. just plyr.setup(); and leave it at that if you have no need for events
+                var instances = plyr.setup({
+                    // Output to console
+                    debug: true
+                });
+
+                // Get an element
+                function get(selector) {
+                    return document.querySelector(selector);
+                }
+
+                // Custom event handler (just for demo)
+                function on(element, type, callback) {
+                    if (!(element instanceof HTMLElement)) {
+                        element = get(element);
+                    }
+                    element.addEventListener(type, callback, false);
+                }
+
+                // Loop through each instance
+                instances.forEach(function (instance) {
+                    // Play
+                    on('.js-play', 'click', function () {
+                        instance.play();
+                    });
+
+                    // Pause
+                    on('.js-pause', 'click', function () {
+                        instance.pause();
+                    });
+
+                    // Stop
+                    on('.js-stop', 'click', function () {
+                        instance.stop();
+                    });
+
+                    // Rewind
+                    on('.js-rewind', 'click', function () {
+                        instance.rewind();
+                    });
+
+                    // Forward
+                    on('.js-forward', 'click', function () {
+                        instance.forward();
+                    });
+                });
+            })();
+
+
+        </script>
+
+    </body>
+
+</html>

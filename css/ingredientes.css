@@ -69,3 +69,39 @@
 .seleciona-item.doce-de-leite input[type=checkbox]:checked + label {
     background-image: url("../img/outros/ingredientes/active/check-_doce_de_leite.png");
 }
+
+/* mashmellow */
+.seleciona-item.mashmellow input[type=checkbox] + label {
+    background-image: url("../img/outros/ingredientes/inactive/mashmellow.png");
+}
+
+.seleciona-item.mashmellow input[type=checkbox]:checked + label {
+    background-image: url("../img/outros/ingredientes/active/check-_mashmellow.png");
+}
+
+/* mirtilo */
+.seleciona-item.mirtilo input[type=checkbox] + label {
+    background-image: url("../img/outros/ingredientes/inactive/mirtilo.png");
+}
+
+.seleciona-item.mirtilo input[type=checkbox]:checked + label {
+    background-image: url("../img/outros/ingredientes/active/check-_mirtilo.png");
+}
+
+/* morango */
+.seleciona-item.morango input[type=checkbox] + label {
+    background-image: url("../img/outros/ingredientes/inactive/morango.png");
+}
+
+.seleciona-item.morango input[type=checkbox]:checked + label {
+    background-image: url("../img/outros/ingredientes/active/check-_morango.png");
+}
+
+/* nozes */
+.seleciona-item.nozes input[type=checkbox] + label {
+    background-image: url("../img/outros/ingredientes/inactive/nozes.png");
+}
+
+.seleciona-item.nozes input[type=checkbox]:checked + label {
+    background-image: url("../img/outros/ingredientes/active/check-_nozes.png");
+}

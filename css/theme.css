@@ -1127,28 +1127,70 @@ body {
 body {
   background: url("../img/backgrounds/bck-global-ptt.jpg") repeat center;
 }
+.section-escolha.with-video {
+  padding: 18% 0 17% 0;
+  position: relative;
+  z-index: 1;
+}
+.video-player {
+  margin-top: -200px;
+  z-index: -1;
+}
+@media (max-width: 992px) {
+  .video-player {
+    margin-top: -100px;
+  }
+}
+@media (max-width: 768px) {
+  .video-player {
+    margin-top: -70px;
+  }
+}
+.video-player .content-video video {
+  width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+.convide {
+  position: relative;
+  padding: 0px 30px;
+  margin: 70px;
+}
+.convide p {
+  font-size: 20px;
+}
+.convide:before {
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -70px;
+  width: 78px;
+  height: 103px;
+  background: url("../img/icones/atention.png") no-repeat top left;
+  background-size: contain;
+}
+.convide:after {
+  content: '';
+  position: absolute;
+  top: -25%;
+  right: -70px;
+  width: 78px;
+  height: 103px;
+  background: url("../img/icones/atention-r.png") no-repeat top left;
+  background-size: contain;
+}
 .section-escolha {
   margin-top: -210px;
-  background-image: url("../img/backgrounds/food-001.png");
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top center;
+  background-size: cover;
+  background-position: center right;
   padding: 150px 0 250px 0;
+  position: relative;
 }
 @media (max-width: 992px) {
   .section-escolha {
     margin-top: -16%;
-  }
-}
-@media (max-width: 768px) {
-  .section-escolha {
-    padding: 46px 0 220px 0;
-  }
-}
-@media (max-width: 480px) {
-  .section-escolha {
-    padding: 36px 0 190px 0;
   }
 }
 .section-ingredientes {
@@ -1372,7 +1414,7 @@ body {
 }
 @media (max-width: 768px) {
   .header-global .header-intro .intro-text {
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
   }
 }
@@ -1382,8 +1424,9 @@ body {
 }
 .header-global .header-intro .foto-chef .foto-chef-img {
   position: absolute;
-  top: -180px;
+  top: -130px;
   right: 89px;
+  z-index: 2;
 }
 @media (max-width: 992px) {
   .header-global .header-intro .foto-chef .foto-chef-img {
@@ -1422,9 +1465,14 @@ body {
 }
 .header-global .navigation .content-logo {
   position: absolute;
-  top: 0;
+  top: -70px;
   left: 30px;
   z-index: 1;
+}
+@media (max-width: 992px) {
+  .header-global .navigation .content-logo {
+    top: 0px;
+  }
 }
 .header-global .navigation .content-logo .logo {
   text-indent: -99999px;
@@ -1435,8 +1483,8 @@ body {
 }
 @media (max-width: 992px) {
   .header-global .navigation .content-logo .logo {
-    width: 150px;
-    height: 164px;
+    width: 120px;
+    height: 146px;
   }
 }
 .header-global .navigation .nav-bar-caixa {
@@ -1444,7 +1492,7 @@ body {
   background-color: #0068ae;
   height: 50px;
   padding: 10px;
-  margin: 85px 0 0 0;
+  margin: 10px 0 0 0;
   position: relative;
   z-index: 0;
 }
